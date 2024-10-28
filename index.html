@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Ejemlo</title>
+    <link rel="icon" href="assets/ico/bart.png" type="image/png">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1>La Web del examen</h1>
+    </header>
+    <main>
+        <nav class="navegador">
+            <button class="boton1">Jugos</button>
+            <button class="boton2">Inicio</button>
+            <button class="boton3">Consolas</button>
+            <span class="logo">
+                <img src="assets/logo/logo.jpg" alt="Logo de la web" />
+            </span>
+        </nav>
+        <section class="seccion2">
+            <div class="contenedores">
+                <div class="contenedor2">
+                    <h3>Flume x Greenpeace:</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/lbwhHxxFdDE?loop=1&playlist=lbwhHxxFdDE&controls=1"
+                        title="YouTube video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="contenedor2">
+                    <span class="h5p">
+                        <iframe src="https://h5p.org/h5p/embed/6729" width="1000" height="400" frameborder="0"
+                            allowfullscreen="allowfullscreen"
+                            allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                            title="Chart"></iframe>
+                    </span>
+                </div>
+                <div class="contenedor2">
+                    <canvas id="miCanvas" width="600" height="450"></canvas>
+                </div>
+                <div class="contenedor2">
+                    <h3>Parrot Anafi:</h3>
+                    <img src="assets/image/dron3.jpg" alt="Drone Parrot Anafi" width="300" height="200">
+                    <p>Este dron compacto es conocido por su diseño ligero y capacidades de grabación en 4K, además
+                        de su funcionalidad de inclinación de cámara.</p>
+                </div>
+                <div class="contenedor2">
+                    <div class="map-container">
+                        <div id="map1" class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <form action="your-action-url" method="post"> <!-- Añadir action y method -->
+                    <h1 class="singup">Sign Up</h1>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <br><br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <br><br>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+                    <br><br>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Password" required>
+                    <br><br>
+                    <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña"
+                        placeholder="Confirmar Password" required>
+                    <br><br>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    <br><br>
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                    <br><br>
+                    <label for="aceptarTer">Aceptar términos y condiciones:</label>
+                    <input type="checkbox" id="aceptarTer" name="aceptarTer" required>
+                    <br><br>
+                    <button type="submit" name="enviar">Enviar</button>
+                    <br><br>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <span class="contenedor1">
+            <h4>Patrocinador Principal:</h4>
+            <p>Compañía de Juegos XYZ</p>
+            <h5>Patrocinador Oro:</h5>
+            <p>Premium Games Co.</p>
+            <h6>Aliado Estratégico:</h6>
+            <p>Global Gaming Network</p>
+        </span>
+        <span class="contenedor5">
+            <h4>Patrocinador Secundario:</h4>
+            <p>Tech Innovators</p>
+            <h5>Colaborador de Desarrollo:</h5>
+            <p>NextGen Studios</p>
+            <h6>Patrocinador de Evento:</h6>
+            <p>Interactive Fun Inc.</p>
+        </span>
+        <span class="contenedor3">
+            <h4>Colaborador:</h4>
+            <p>Game Studio ABC</p>
+            <h5>Socio de Creación:</h5>
+            <p>Creative Minds</p>
+            <h6>Patrocinador Local:</h6>
+            <p>Local Game Hub</p>
+        </span>
+        <span class="logos">
+            <img src="assets/svg/facebook.svg" alt="facebook" width="50" height="50">
+            <img src="assets/svg/instagram.svg" alt="instagram" width="50" height="50">
+            <img src="assets/svg/tik-tok.svg" alt="tik-tok" width="50" height="50">
+            <img src="assets/svg/youtube.svg" alt="youtube" width="50" height="50">
+        </span>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

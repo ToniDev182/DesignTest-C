@@ -1,0 +1,249 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera {
+
+    display: flex;
+    /* Flexbox para organizar los elementos */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    background-color: #0c171f;
+    /* Fondo negro */
+    padding: 20px;
+    /* Espacio interno opcional */
+    color: #fff;
+}
+
+.navegador {
+    display: flex;
+    /* Flexbox para organizar los elementos */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    background-color: #172f3f;
+    /* Fondo negro */
+    padding: 20px;
+    /* Espacio interno opcional */
+
+}
+
+.boton1,
+.boton2,
+.boton3 {
+    margin: 0 10px;
+    width: 80px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(92, 90, 90);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.seccion1 {
+    display: flex;
+    /* Flexbox para organizar los elementos */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    background-color: #000000;
+    /* Fondo negro */
+    padding: 20px;
+    /* Espacio interno opcional */
+}
+
+.seccion2 {
+    display: flex;
+    justify-content: space-between;
+    /* Espacia los elementos */
+}
+
+aside {
+    flex: 1;
+    /* El aside ocupará una proporción del espacio disponible */
+    margin: 40px;
+    /* Espacio entre aside y contenedores */
+    /* estolo del contenedor */
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    border: 1px solid #ddd;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 15px;
+    /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+
+.contenedores {
+    flex: 3;
+    /* Los contenedores ocuparán más espacio que el aside */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los contenedores se envuelvan */
+}
+
+.contenedor2 {
+    margin: 10px;
+    /* Espacio entre los contenedores */
+    flex: 1 1 300px;
+    /* Permite que los contenedores se ajusten al tamaño */
+
+    /* stilo de la caja */
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    border: 1px solid #ddd;
+    /* Borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 15px;
+    /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+footer {
+    background-color: #386e9c;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    /* Espacio entre los contenedores */
+    padding: 50px;
+
+
+}
+
+.logos {
+    text-align: center;
+    /* Centra el contenido del footer */
+    background-color: #386e9c;
+    /* Color de fondo del footer */
+    color: white;
+    /* Color del texto */
+    padding: 20px;
+    /* Espaciado interno */
+}
+
+form {
+    background-color: #4d82b7;
+    /* Fondo blanco */
+    border: 1px solid #ddd;
+    /* Borde gris claro */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    max-width: 400px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrar el formulario */
+}
+
+.singup {
+    text-align: center;
+    /* Centrar el título */
+    color: #000000;
+    /* Color del texto */
+}
+
+label {
+    display: block;
+    /* Asegura que cada etiqueta esté en su propia línea */
+    margin-bottom: 5px;
+    /* Espacio debajo de la etiqueta */
+    color: #000000;
+    /* Color gris para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    /* Ancho completo */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 15px;
+    /* Espacio entre campos */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho total */
+    transition: border-color 0.3s;
+    /* Transición suave para el enfoque */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #386e9c;
+    /* Cambio de color del borde en el enfoque */
+    outline: none;
+    /* Eliminar el contorno predeterminado */
+}
+
+button[type="submit"] {
+    background-color: #27ab51;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 15px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    width: 100%;
+    /* Ancho completo */
+    transition: background-color 0.3s;
+    /* Transición suave para el color de fondo */
+}
+
+button[type="submit"]:hover {
+    background-color: #305d82;
+    /* Color de fondo al pasar el cursor */
+}
+
+
+
+.map {
+    flex: 1;
+    /* Cada mapa ocupará el mismo espacio */
+    margin: 5px;
+    /* Espaciado entre mapas */
+}
+
+#map1 {
+    height: 400px;
+    /* Altura para cada mapa */
+    width: 100%;
+    /* Ancho completo */
+    margin-bottom: 20px;
+    /* Espacio entre los mapas */
+}
+
+.map-container {
+    width: 100%;
+    /* Ajusta según el diseño que desees */
+    height: 500px;
+    /* Asegúrate de que el mapa tenga una altura adecuada */
+}
